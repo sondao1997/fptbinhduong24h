@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500; 
+    color: #000; 
+}
+
+header{
+    width: 100%; 
+     
+}
+
+header .header-info{
+    background-color: orange;
+    color: #fff;
+}
+
+header .header-menu{ 
+    border-bottom: inset;
+}
+
+header .header-menu #logo{
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+header .header-menu .navbar .navbar-nav .icon img{
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+     
+}
+
+header .header-menu .navbar .navbar-nav .title{
+    
+    font-weight: 500;
+}
+/* Main */
+main #carouselIndicators .carousel-inner{
+    max-height: 500px;
+}
+
+/* Footer */
+footer{
+    background-color: #222222;
+    color: #fff;
+}
+
+#mobile-contact{
+    position: fixed;
+    z-index: 999;
+    left: 150px;
+    top: 60px;
+    font-size: 18px;
+}

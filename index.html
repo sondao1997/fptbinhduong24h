@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT - Internet Bình Dương</title>
+    <link rel="shortcut icon" href="./assets/images/logo_title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body onscroll="checkPhoneNum()"">
+    <header>
+        <div class="header-info d-none d-md-block">
+            <div class="container">
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="p-2 border">Về FPT TELECOM</div>
+                    <div class="p-2 border">Zalo: 0963 555 722</div>
+                    <div class="p-2 border">Thủ tục lắp mạng</div>
+                    <div class="p-2 border">Địa điểm giao dịch</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-menu" > 
+            <a class="d-sm-none"  id="mobile-contact" href="tel:0965 555 722">0963 555 722</a> 
+            <script>
+                function checkPhoneNum() {
+                    console.log("check check");
+                    let checkScroll = window.scrollY;
+                    if (checkScroll > 50) {
+                   
+                    document.getElementById('mobile-contact').style.display = "none";
+                    }
+                    else  document.getElementById('mobile-contact').style.display = "block";
+                }
+            </script>
+            <div class="container"> 
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="assets/images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                        <div class="navbar-nav">
+                            <a class="nav-link pr-4 text-center" href="fpt-internet.html">
+                                <div class="icon ">
+                                    <img src="./assets/images/menu_internet.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    INTERNET FPT
+                                </div>
+                            </a>
+                            <a class="nav-link pr-4 text-center" href="fpt-tv.html">
+                                <div class="icon ">
+                                    <img src="./assets/images/menu_tv.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    TRUYỀN HÌNH FPT
+                                </div>
+                            </a>
+
+                            <a class="nav-link pr-4 text-center" href="fpt-playbox.html">
+                                <div class="icon ">
+                                    <img src="./assets/images/menu_playbox.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    FPT PLAYBOX
+                                </div>
+                            </a>
+                            <a class="nav-link pr-4 text-center" href="fpt-camera.html">
+                                <div class="icon ">
+                                    <img src="./assets/images/menu_camera.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    CAMERA FPT
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div> 
+        </div>
+    </header>
+    <main> 
+        <!-- Carousel -->
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="./assets/images/cs_intro.png" alt="First slide">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/images/cs_camera.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/images/cs_tv.jpg" alt="Second slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--End Carousel -->
+
+        <!--Introduce product-->
+        <div class="container">
+            <div class="m-5">
+                <h3 class="text-center">Chuyên cung cấp dịch vụ FPT Telecom Bình Dương</h3>
+                <ul>
+                    <li>Dịch vụ internet cáp quang</li>
+                    <li>Dịch vụ truyền hình FPT</li>
+                    <li>FPT Play Box - Công nghệ biến tivi thường thành smart TV</li>
+                    <li>Camera FPT</li>
+                </ul>
+                <p>Với hạ tầng cáp quang tốc độ cao, chế độ hậu mãi tốt. Đội ngũ hỗ trợ 24/24, sẵn sàng phục vụ quý
+                    khách bất cứ lúc nào.
+                    FPT cam kết mang đến quý khách sự hài lòng từ dịch vụ chuyên nghiệp, trải nghiệm tốt nhất mà chúng
+                    tôi có.</p>
+                <p><em>Quý khách vui lòng tham khảo các gói cước khuyến mãi bên dưới để lựa chọn tốc độ và giá cước phù
+                        hợp với nhu cầu sử dụng.</em></p>
+                <h6>Hoặc liên hệ số <a href="tel:0963 555 722">0963 555 722</a> để được tư vấn và miễn phí lắp đặt nhanh
+                    nhất.</h6>
+                <hr>
+                <div class="text-center">
+                    <h4><strong>BẢNG GIÁ INTERNET CÁP QUANG</strong> </h4>
+                    <H5><strong>GÓI CÁ NHÂN VÀ GIA ĐÌNH</strong> </H5>
+                </div>
+               
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Gói cước</td>
+                            <td>Băng thông</td>
+                            <td>Cước tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Super25</td>
+                            <td>25 Mbps</td>
+                            <td>190.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Super45</td>
+                            <td>45 Mbps</td>
+                            <td>210.000đ</td>
+                        </tr> 
+                        <tr>
+                            <td>Super60</td>
+                            <td>60 Mbps</td>
+                            <td>235.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Super80</td>
+                            <td>80 Mbps</td>
+                            <td>320.000đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h6><em>Lưu ý: giá trên đã bao gồm 10% VAT.</em></h6>
+                <br />
+                <p>(*) ƯU ĐÃI ĐẶC BIỆT CHO KHÁCH HÀNG TRẢ TRƯỚC:</p>
+                <ol>
+                    <li>Trả trước 6 tháng: Miễn phí vật tư triển khai + tặng 1 tháng cước.</li>
+                    <li>Trả trước 1 năm: Miễn phí vật tư + tặng 2 tháng cước (tháng thứ 13,14)</li>
+                    <li>Lắp đặt Modem Dual Band 110K.</li>
+                </ol>
+            </div>
+            <h4 class="text-center"><STRONG>COMBO CÁP QUANG KÈM THEO TRUYỀN HÌNH FPT</STRONG></h4>
+            <img class="d-block mx-auto img-fluid" src="./assets/images/comboTV.jpg" alt="Combo TV">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Gói cước</td>
+                        <td>Cước tháng</td>
+                    </tr>
+                    <tr>
+                        <td>Combo Super45</td>
+                        <td>240.000</td>
+                    </tr>
+                    <tr>
+                        <td>Combo Super60</td>
+                        <td>260.000</td>
+                    </tr>
+                    <tr>
+                        <td>Combo Super80</td>
+                        <td>350.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Thiết bị: 01 Modem wifi + 01 Bộ giải mã HD Box.</strong>
+                &nbsp;<strong>Quý khác vui lòng chọn phương thức thanh toán:</strong></p>
+                <ul>
+                    <li>Trả sau từng tháng: Phí thiết bị 550.000 đồng.</li>
+                    <li>Trả trước 6 tháng: Miễn phí thiết bị tặng 1 tháng cước.</li>
+                    <li>Trả trước 12 tháng: Miễn phí thiết bị + Tặng 02 tháng (tháng 13+14).</li>
+                    <li>Riêng gói Super65 tặng modem Acher C5.</li>
+                    <li>Lắp đặt modem Dual band 330k.</li>
+                </ul>
+                <p><em>Lưu ý:</em></p>
+                <ol>
+                    <li>Mỗi Tivi sử dụng 01 HD Box.</li>
+                    <li>Từ Box thứ 2-5: 330.000 đồng/Box, cước cộng thêm 22.000 đồng/tháng/Box.</li>
+                </ol>
+
+                <p><a href="tel:0963 555 722">ĐĂNG KÍ NGAY</a> để nhận khuyến mãi đặc biệt.</p>
+                <!-- Internet Doanh Nghiêp -->
+                <h4 class="text-center"><STRONG>BẢNG GIÁ INTERNET DOANH NGHIỆP</STRONG></h4>
+                <p class="text-center">Dùng cho cả doanh nghiệp, công cộng</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                    <td>Gói cước</td>
+                    <td>Băng thông</td>
+                    <td>Cam kết quốc tế</td>
+                    <td>Gia cước (VNĐ)</td>
+                    </tr>
+                    <tr>
+                    <td>Super100</td>
+                    <td>100 Mbps</td>
+                    <td>10,8 Mbps</td>
+                    <td>490.000</td>
+                    </tr>
+                    <tr>
+                    <td>Super200</td>
+                    <td>200 Mbps</td>
+                    <td>11,8 Mbps</td>
+                    <td>545.000</td>
+                    </tr>
+                    <tr>
+                    <td>Super300</td>
+                    <td>300 Mbps</td>
+                    <td>12,6 Mbps</td>
+                    <td>1.410.000</td>
+                    </tr>
+                    <tr>
+                    <td>Super200</td>
+                    <td>200 Mbps</td>
+                    <td>18,9 Mbps</td>
+                    <td>8.125.000</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p>Liên hệ ngay <a href="tel:0963 555 722"><strong>0963 555 722</strong></a><strong><a href="http://0906.696.309" target="_blank">&nbsp;</a></strong>để được tư vấn lắp đặt miễn phí.</p>
+                <!--End Internet Doanh Nghiêp -->
+
+                <h2 class="text-center">Thủ tục và qui trình đăng kí internet - truyền hình FPT</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <h3 class="text-center">Thủ tục</h3>
+                            <li>Chứng minh nhân dân/ thẻ căn cước công dân.</li>
+                            <li>01 bản photo giấy chứng minh nhà sở hữu.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <h3 class="text-center">Quy trình</h3>
+                            <li>Quý khách tham khảo các gói cước phù hợp.</li>
+                            <li>Khách hàng liên hệ <a href="tel:0963 555 722"><strong>0963 555 722</strong></a><strong>&nbsp;</strong>để được tư vấn chi tiết.</li>
+                            <li>Nhân viên FPT đến nhà khảo sát và làm thủ tục đăng ký.</li>
+                            <li>Lắp đặt trong 24- 48h (trừ mưa bão).</li>
+                            </ul>
+                    </div>
+                </div>
+        </div>
+        <!--End Introduce product-->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="assets/images/logo_ft.jpg" alt="logo" style="width: 200px; height: 200px;">
+                    </div>
+
+                    <p>
+                        Công ty cổ phần viễn thông FPT nỗ lực làm Quý Khách hàng hài lòng trên cơ sở hiểu biết sâu sắc
+                        và đáp ứng một cách tốt nhất nhu cầu của Quý Khách hàng với lòng tận tụy và năng lực không ngừng
+                        được nâng cao.
+                    </p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <h3>Liên Hệ</h3>
+                    <p><i class="fa fa-map-marker"></i>
+                        FPT Bình Dương: Ô 9+10, Lô B1, Đường D9, KDC Chánh Nghĩa, P. Chánh Nghĩa, TP. TDM, Bình Dương.
+                    </p>
+                    <p><i class="fa fa-phone"> </i> + 0963 555 722</p>
+                    <p> CSKH: 1900 6600</p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <h3>Dịch vụ</h3>
+                    <p>Đăng kí Internet</p>
+                    <p>Truyền Hình FPT</p>
+                    <p>FPT Play Box</p>
+                    <p>Camera FPT</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
