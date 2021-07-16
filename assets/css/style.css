@@ -24,7 +24,7 @@ header{
 }
 
 header .header-info{
-    background-color: orange;
+    background-color: #FE7005;
     color: #fff;
 }
 
@@ -47,11 +47,59 @@ header .header-menu .navbar .navbar-nav .icon img{
 
 header .header-menu .navbar .navbar-nav .title{
     
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.navbar{
+    background: #fff;
+
+}
+
+.contact-footer-mobile{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #FE7005;
+    color: #FFF;
+    z-index: 999;
+    width: 10%;
+}
+.contact-icon{
+    width: 50px;
+}
+
+.contact-footer-mobile .contact-mobile:hover{
+    background-color: #f19752;
 }
 /* Main */
+
+.header-info{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000 !important;
+    overflow: hidden;  
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 43px;
+    z-index: 999 !important;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+}
+
+main{
+    margin-top: 146px;
+}
+
 main #carouselIndicators .carousel-inner{
-    max-height: 500px;
+    max-height: 600px;
 }
 
 /* Footer */
@@ -66,4 +114,50 @@ footer{
     left: 150px;
     top: 60px;
     font-size: 18px;
+}
+
+.btn-contact{
+    color: #fff;
+    background-color: #FE7005;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 5px 10px;
+}
+
+.text-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold; 
+    background-color: #FE7005;
+}
+
+td{
+    border: 1px solid #dee2e6 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 0px !important;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .navbar{
+        margin: 0%;
+    }
+
+
+    .contact-footer-mobile{
+        background-color: #FE7005;
+        color: #fff;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0%;
+        z-index: 999 !important;
+        width: 100%
+    }
+    .contact-mobile{
+        width: 50%;
+    }
 }
