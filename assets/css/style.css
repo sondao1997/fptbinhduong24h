@@ -139,13 +139,23 @@ td{
     vertical-align: middle !important;
     padding: 0px !important;
 }
-
-@media only screen and (max-width: 600px){
-    
+/* Mobile */
+@media only screen and (max-width: 600px){ 
+    main{
+        margin-top: 80px;
+    }
     .navbar{
         margin: 0%;
     }
 
+    .carousel-inner .carousel-item{
+        max-height: 200px;
+    }
+
+    .carousel-inner .carousel-item img{
+       
+        height: 200px;
+    }
 
     .contact-footer-mobile{
         background-color: #FE7005;
