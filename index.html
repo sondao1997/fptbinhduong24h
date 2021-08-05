@@ -166,7 +166,7 @@
                 <hr>
                 <h5>Bảng giá dịch vụ theo khu vực cụ thể:</h5>
                 <div class="col-lg-8 col-sm-12 p-0">
-                    <select onchange="showData(this.value)" id="select_id">
+                    <select onchange="addRowsToTable()" id="select_id">
                         <option value="0">Thủ Dầu Một</option>
                         <option value="0">Thuận An</option>
                         <option value="1">Dĩ An</option>
@@ -192,37 +192,7 @@
                                 <h4><strong>BẢNG GIÁ INTERNET CÁP QUANG</strong> </h4>
                                 <H5><strong>GÓI CÁ NHÂN VÀ GIA ĐÌNH</strong> </H5>
                             </div>
-                            <table class="table table-bordered col-lg-6  col-sm-12 mx-auto">
-                                <thead>
-                                    <tr class="text-title">
-                                        <td>Gói cước</td>
-                                        <td>Băng thông</td>
-                                        <td>Cước tháng (VNĐ)</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Super-30</td>
-                                        <td>30 Mbps</td>
-                                        <td>190.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Super-80</td>
-                                        <td>80 Mbps</td>
-                                        <td>210.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Super-100</td>
-                                        <td>100 Mbps</td>
-                                        <td>235.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Super-150</td>
-                                        <td>150 Mbps</td>
-                                        <td>320.000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div id="i-person"></div> 
                             <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
                                         kí</a></button>
                                 để
@@ -241,7 +211,8 @@
                     <div id="cb-internet" class="container tab-pane fade"><br>
                         <h4 class="text-center"><STRONG>COMBO CÁP QUANG KÈM THEO TRUYỀN HÌNH FPT</STRONG></h4>
                         <img class="d-block mx-auto img-fluid" src="./assets/images/comboTV.jpg" alt="Combo TV">
-                        <table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-5">
+                        <div id="i-combo"></div> 
+                        <!-- <table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-5">
                             <tbody>
                                 <tr class="text-title">
                                     <td>Gói cước</td>
@@ -260,7 +231,7 @@
                                     <td>350.000</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
                         <p><strong>Thiết bị: 01 Modem wifi + 01 Bộ giải mã HD Box.</strong>
                             &nbsp;<strong>Quý khác vui lòng chọn phương thức thanh toán:</strong></p>
                         <ul>
@@ -289,7 +260,8 @@
                         <!-- Internet Doanh Nghiêp -->
                         <h4 class="text-center"><STRONG>BẢNG GIÁ INTERNET DOANH NGHIỆP</STRONG></h4>
                         <p class="text-center">Dùng cho cả doanh nghiệp, công cộng</p>
-                        <table class="table table-bordered col-lg-8  col-sm-12 mx-auto">
+                        <div id="i-enterprise"></div> 
+                        <!-- <table class="table table-bordered col-lg-8  col-sm-12 mx-auto">
                             <tbody>
                                 <tr class="text-title">
                                     <td>Gói cước</td>
@@ -327,7 +299,7 @@
                                     <td>1.410.000</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
                         <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
                                     kí</a></button> để
                             nhận
@@ -342,13 +314,12 @@
                 </div>
 
 
-
+                </div>
 
                 <h2 class="text-center">Thủ tục và qui trình đăng kí internet - truyền hình FPT</h2>
 
                 <hr>
-                <div class="row ">
-
+                <div class="row "> 
                     <div class="col-md-6">
                         <img src="./assets/images/proceduce.jpg" alt="thu tuc lap mang" class="w-100 h-100">
 
