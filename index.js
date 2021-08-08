@@ -1,24 +1,37 @@
 
-function getRowsData(listPrice) {
+window.onload = function (e) {
+    initApp();
+}
+
+function initApp() {
+    showPriceList();
+}
+
+
+
+function getRowsData(listPrice, district) {
     rows = [];
     for (let i = 0; i < listPrice.length; i++) {
         const row = listPrice[i];
         rows.push('<tr>');
-        for (const cell in row) {
+        for (const cell in row) { 
             if (Object.hasOwnProperty.call(row, cell)) { 
                 rows.push(`<td>${row[cell]}</td>`)
-            }
-             
+            } 
         }
         rows.push('<tr>'); 
     }
-    rows = rows.join(' ');
+    if (district === 1) {
+        rows[8] = rows[8].match(/[\d.]+/g) - 10;
+        rows[8] = `<td>${rows[8]}.000</td>`
+    } 
+     
     return rows || null;
 }
 
 
 
-function addRowsToTable() { 
+function showPriceList(district=0) { 
     const table = document.getElementById("data-list");
     const iPerson = document.getElementById("i-person");
     const iCombo = document.getElementById("i-combo");
@@ -29,14 +42,17 @@ function addRowsToTable() {
     const theadEnterPrise = '<thead> <tr class="text-title"> <td>Gói cước</td><td>Băng thông</td> \
     <td>Cam kết quốc tế</td> <td>Số lượng truy cập</td><td>Cước tháng (VNĐ)</td> </tr> </thead>';
     
-    
+    const tBodyPerson = getRowsData(dataListPrice['internet'], +district);
+    const tBodyCombo = getRowsData(dataListPrice['combo'], +district);
+    const tBodyEnterPrise = getRowsData(dataListPrice['internetDN'], +district); 
+     
 
     iPerson.innerHTML= `<table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-3"> ${theadPerson}
-                        ${getRowsData(dataListPrice['internet'])}</table>`;
+                        ${tBodyPerson}</table>`;
     iCombo.innerHTML= `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadCombo}
-                        ${getRowsData(dataListPrice['combo'])}</table>`;
+                        ${tBodyCombo}</table>`;
     iEnterprise.innerHTML= `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadEnterPrise}
-                        ${getRowsData(dataListPrice['internetDN'])}</table>`;
+                        ${tBodyEnterPrise}</table>`;
      
     
 }
@@ -73,7 +89,7 @@ const dataListPrice = {
         {
             goicuoc:'Super-80',
             bangthong:'80 Mbps',
-            cuocthang:'230.000'
+            cuocthang:'240.000'
         },
         {
             goicuoc:'Super-100',

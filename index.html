@@ -166,12 +166,14 @@
                 <hr>
                 <h5>Bảng giá dịch vụ theo khu vực cụ thể:</h5>
                 <div class="col-lg-8 col-sm-12 p-0">
-                    <select onchange="addRowsToTable()" id="select_id">
+                    <select onchange="showPriceList(this.value)" id="select_id">
+                        <option value="0" selected="selected">Dĩ An</option>
                         <option value="0">Thủ Dầu Một</option>
                         <option value="0">Thuận An</option>
-                        <option value="1">Dĩ An</option>
                         <option value="1">Bến Cát</option>
                         <option value="1">Tân Uyên</option>
+
+                        
                     </select>
                 </div>
                 <div id="data-list">
@@ -192,7 +194,7 @@
                                 <h4><strong>BẢNG GIÁ INTERNET CÁP QUANG</strong> </h4>
                                 <H5><strong>GÓI CÁ NHÂN VÀ GIA ĐÌNH</strong> </H5>
                             </div>
-                            <div id="i-person"></div> 
+                            <div id="i-person"></div>
                             <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
                                         kí</a></button>
                                 để
@@ -207,12 +209,12 @@
                                 <li>Từ gói 80 miễn phí modem Dual Band 2 băng tần (5G).</li>
                             </ol>
                         </div>
-                     
-                    <div id="cb-internet" class="container tab-pane fade"><br>
-                        <h4 class="text-center"><STRONG>COMBO CÁP QUANG KÈM THEO TRUYỀN HÌNH FPT</STRONG></h4>
-                        <img class="d-block mx-auto img-fluid" src="./assets/images/comboTV.jpg" alt="Combo TV">
-                        <div id="i-combo"></div> 
-                        <!-- <table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-5">
+
+                        <div id="cb-internet" class="container tab-pane fade"><br>
+                            <h4 class="text-center"><STRONG>COMBO CÁP QUANG KÈM THEO TRUYỀN HÌNH FPT</STRONG></h4>
+                            <img class="d-block mx-auto img-fluid" src="./assets/images/comboTV.jpg" alt="Combo TV">
+                            <div id="i-combo"></div>
+                            <!-- <table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-5">
                             <tbody>
                                 <tr class="text-title">
                                     <td>Gói cước</td>
@@ -232,36 +234,36 @@
                                 </tr>
                             </tbody>
                         </table> -->
-                        <p><strong>Thiết bị: 01 Modem wifi + 01 Bộ giải mã HD Box.</strong>
-                            &nbsp;<strong>Quý khác vui lòng chọn phương thức thanh toán:</strong></p>
-                        <ul>
-                            <li>Trả sau từng tháng: Phí thiết bị 550.000 đồng.</li>
-                            <li>Trả trước 6 tháng: Miễn phí thiết bị tặng 1 tháng cước.</li>
-                            <li>Trả trước 12 tháng: Miễn phí thiết bị + Tặng 02 tháng (tháng 13+14).</li>
-                            <li>Riêng gói Super-80 tặng modem Acher C5.</li>
-                            <li>Lắp đặt modem Dual band 990,000 VNĐ.</li>
-                            <li>Từ gói Super-80 đóng 6 tháng miễn phí modem AC 1000F.</li>
-                        </ul>
-                        <p><em>Lưu ý:</em></p>
-                        <ol>
-                            <li>
-                                <h6><em>Giá trên đã bao gồm 10% VAT.</em></h6>
-                            </li>
-                            <li>Mỗi Tivi sử dụng 01 HD Box.</li>
-                            <li>Từ Box thứ 2-5: 550.000 VNĐ/Box, cước cộng thêm 22.000 VNĐ/tháng/Box.</li>
-                        </ol>
+                            <p><strong>Thiết bị: 01 Modem wifi + 01 Bộ giải mã HD Box.</strong>
+                                &nbsp;<strong>Quý khác vui lòng chọn phương thức thanh toán:</strong></p>
+                            <ul>
+                                <li>Trả sau từng tháng: Phí thiết bị 550.000 đồng.</li>
+                                <li>Trả trước 6 tháng: Miễn phí thiết bị tặng 1 tháng cước.</li>
+                                <li>Trả trước 12 tháng: Miễn phí thiết bị + Tặng 02 tháng (tháng 13+14).</li>
+                                <li>Riêng gói Super-80 tặng modem Acher C5.</li>
+                                <li>Lắp đặt modem Dual band 990,000 VNĐ.</li>
+                                <li>Từ gói Super-80 đóng 6 tháng miễn phí modem AC 1000F.</li>
+                            </ul>
+                            <p><em>Lưu ý:</em></p>
+                            <ol>
+                                <li>
+                                    <h6><em>Giá trên đã bao gồm 10% VAT.</em></h6>
+                                </li>
+                                <li>Mỗi Tivi sử dụng 01 HD Box.</li>
+                                <li>Từ Box thứ 2-5: 550.000 VNĐ/Box, cước cộng thêm 22.000 VNĐ/tháng/Box.</li>
+                            </ol>
 
-                        <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
-                                    kí</a></button> để
-                            nhận
-                            khuyến mãi đặc biệt.</p>
-                    </div>
-                    <div id="internet-DN" class="container tab-pane fade"><br>
-                        <!-- Internet Doanh Nghiêp -->
-                        <h4 class="text-center"><STRONG>BẢNG GIÁ INTERNET DOANH NGHIỆP</STRONG></h4>
-                        <p class="text-center">Dùng cho cả doanh nghiệp, công cộng</p>
-                        <div id="i-enterprise"></div> 
-                        <!-- <table class="table table-bordered col-lg-8  col-sm-12 mx-auto">
+                            <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
+                                        kí</a></button> để
+                                nhận
+                                khuyến mãi đặc biệt.</p>
+                        </div>
+                        <div id="internet-DN" class="container tab-pane fade"><br>
+                            <!-- Internet Doanh Nghiêp -->
+                            <h4 class="text-center"><STRONG>BẢNG GIÁ INTERNET DOANH NGHIỆP</STRONG></h4>
+                            <p class="text-center">Dùng cho cả doanh nghiệp, công cộng</p>
+                            <div id="i-enterprise"></div>
+                            <!-- <table class="table table-bordered col-lg-8  col-sm-12 mx-auto">
                             <tbody>
                                 <tr class="text-title">
                                     <td>Gói cước</td>
@@ -300,18 +302,19 @@
                                 </tr>
                             </tbody>
                         </table> -->
-                        <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
-                                    kí</a></button> để
-                            nhận
-                            khuyến mãi đặc biệt.</p>
-                        <h6><em>Lưu ý: giá trên đã bao gồm 10% VAT.</em></h6>
-                        <p>Liên hệ ngay <a href="tel:0963 555 722"><strong>0963 555 722</strong></a> - <a
-                                href="tel:0941 322 600"><strong>0941 322 600</strong></a> để được tư vấn lắp đặt miễn
-                            phí.
-                        </p>
-                        <!--End Internet Doanh Nghiêp -->
+                            <p> <button class="btn-contact"><a class="text-white" href="tel:0963 555 722">Đăng
+                                        kí</a></button> để
+                                nhận
+                                khuyến mãi đặc biệt.</p>
+                            <h6><em>Lưu ý: giá trên đã bao gồm 10% VAT.</em></h6>
+                            <p>Liên hệ ngay <a href="tel:0963 555 722"><strong>0963 555 722</strong></a> - <a
+                                    href="tel:0941 322 600"><strong>0941 322 600</strong></a> để được tư vấn lắp đặt
+                                miễn
+                                phí.
+                            </p>
+                            <!--End Internet Doanh Nghiêp -->
+                        </div>
                     </div>
-                </div>
 
 
                 </div>
@@ -319,7 +322,7 @@
                 <h2 class="text-center">Thủ tục và qui trình đăng kí internet - truyền hình FPT</h2>
 
                 <hr>
-                <div class="row "> 
+                <div class="row ">
                     <div class="col-md-6">
                         <img src="./assets/images/proceduce.jpg" alt="thu tuc lap mang" class="w-100 h-100">
 
