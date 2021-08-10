@@ -23,8 +23,9 @@ function getRowsData(listPrice, district) {
     }
     if (district === 1) {
         rows[8] = rows[8].match(/[\d.]+/g) - 10;
-        rows[8] = `<td>${rows[8]}.000</td>`
+        rows[8] = `<td>${rows[8]}.000</td>`;
     } 
+    console.log(rows);
      
     return rows || null;
 }
@@ -32,7 +33,7 @@ function getRowsData(listPrice, district) {
 
 
 function showPriceList(district=0) { 
-    const table = document.getElementById("data-list");
+     
     const iPerson = document.getElementById("i-person");
     const iCombo = document.getElementById("i-combo");
     const iEnterprise = document.getElementById("i-enterprise"); 
@@ -47,12 +48,13 @@ function showPriceList(district=0) {
     const tBodyEnterPrise = getRowsData(dataListPrice['internetDN'], +district); 
      
 
-    iPerson.innerHTML= `<table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-3"> ${theadPerson}
-                        ${tBodyPerson}</table>`;
-    iCombo.innerHTML= `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadCombo}
-                        ${tBodyCombo}</table>`;
-    iEnterprise.innerHTML= `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadEnterPrise}
-                        ${tBodyEnterPrise}</table>`;
+    iPerson.innerHTML = `<table class="table table-bordered col-lg-6  col-sm-12 mx-auto mt-3"> ${theadPerson}
+                        ${tBodyPerson.join('')}</table>`;
+                         
+    iCombo.innerHTML = `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadCombo}
+                        ${tBodyCombo.join('')}</table>`;
+    iEnterprise.innerHTML = `<table class="table table-bordered col-lg-8  col-sm-12 mx-auto mt-3"> ${theadEnterPrise}
+                        ${tBodyEnterPrise.join('')}</table>`;
      
     
 }
